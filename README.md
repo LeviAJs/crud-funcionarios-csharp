@@ -1,32 +1,27 @@
-#Aplicação desenvolvida em C# utilizando .NET com foco na prática de Programação Orientada a Objetos e separação de responsabilidades.
+# Sistema CRUD de Funcionários – C# (.NET)
+
+## 📌 Sobre o Projeto<br>
+
+### Aplicação desenvolvida em C# (.NET) com aplicação de Programação Orientada a Objetos e organização em camadas, visando a separação de responsabilidades e boas práticas de desenvolvimento.
 
 O sistema permite o gerenciamento de funcionários através das seguintes funcionalidades:
-Cadastro de funcionário
 
-Listagem de funcionários
+• Cadastro de funcionário<br>
+• Listagem de funcionários<br>
+• Atualização de salário<br>
+• Remoção de funcionário<br>
+• Validação de entrada de dados com TryParse<br>
 
-Atualização de salário
+# 🛠 Tecnologias Utilizadas
 
-Remoção de funcionário
+• C#<br>
+• .NET<br>
+• Programação Orientada a Objetos<br>
+• List<Funcionario> <br>
+• Validação com TryParse<br>
 
-Validação de entrada de dados com TryParse
+# 📂 Estrutura do Projeto
 
-#🛠 Tecnologias Utilizadas
-
-C#
-
-.NET
-
-Programação Orientada a Objetos
-
-List<T>
-
-Validação com TryParse
-
-#📂 Estrutura do Projeto
-
-Model → Entidade Funcionario
-
-Repository → Manipulação e armazenamento dos dados
-
-Program → Controle do fluxo da aplicação
+• Model → Entidade Funcionario<br>
+• Repository → Manipulação e armazenamento dos dados<br>
+• Program → Controle do fluxo da aplicação<br>
