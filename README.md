@@ -1,4 +1,4 @@
-# Sistema CRUD de Funcionários – C# (.NET)
+# 2.0V Sistema CRUD de Funcionários – C# (.NET)
 
 ## 📌 Sobre o Projeto<br>
 
@@ -11,6 +11,7 @@ O sistema permite o gerenciamento de funcionários através das seguintes funcio
 • Atualização de salário<br>
 • Remoção de funcionário<br>
 • Validação de entrada de dados com TryParse<br>
+• Separação do menu (estrutura)
 
 # 🛠 Tecnologias Utilizadas
 
