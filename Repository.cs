@@ -1,49 +1,46 @@
-﻿using System;   
+using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Runtime.Intrinsics.X86;
-using System.Security.Cryptography.X509Certificates;
+using POO;
 
-
-namespace POO_treino
+namespace POO
     {
-    class Repositorio
+    class Repository
         {
+        private List<Funcionario> listaFuncionario {get; set;}
 
-        private List<Funcionario> listaFuncionario = new List<Funcionario>();
-       
-        public void Adicionar(Funcionario funcionario) {
+        public Repository()
+            {
+            listaFuncionario = new List<Funcionario>();
+            }
+
+        public void Adicionar(Funcionario funcionario)
+            {
             listaFuncionario.Add(funcionario);
-            
             }
-
-        public void Aumento(int id, float valor) {
-            foreach(Funcionario funcionario in listaFuncionario) {
-                if(funcionario.id == id) {
-                    funcionario.Receber(valor);
-                    Console.WriteLine("Aumento realizado com sucesso");
+        public void AumentoSalario(int id, decimal aumento)
+            {
+            foreach (Funcionario funcionario in listaFuncionario)
+                {
+                if (funcionario.id == id)
+                    {
+                    funcionario.AumentarSalarioPorPercentual(aumento);
                     }
                 }
             }
-
-        public void Remover(int id) {
-            for(int i = 0; i < listaFuncionario.Count; i++) {
-                if(listaFuncionario[i].id == id) {
+        public void Remover(int id)
+            {
+            for (int i = 0; i < listaFuncionario.Count; i++)
+                {
+                if (listaFuncionario[i].id == id)
+                    {
                     listaFuncionario.Remove(listaFuncionario[i]);
-                    Console.WriteLine("Removido com sucesso");
+                    break;
                     }
                 }
             }
-            
-        public void Mostar() {
-            foreach(Funcionario funcionario in listaFuncionario) {
-                
-                    Console.Write("ID: " + funcionario.id + ", ");
-                    Console.Write("Funcionario: " + funcionario.nome + ", ");
-                    Console.WriteLine("Salario: " + funcionario.salario);
-                    Console.WriteLine();
-                    
-                }
+        public IReadOnlyList<Funcionario> ListaFuncionarios()
+            {
+            return listaFuncionario;
             }
         }
     }
